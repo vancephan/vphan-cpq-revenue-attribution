@@ -1,0 +1,52 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__LookupQuery__c",
+                "referenceId": "PriceRuleLEQlq1"
+            },
+            "SBQQ__PriceRule2__c": "@PriceRuleLEQ",
+            "SBQQ__MatchType__c": "Field Value",
+            "SBQQ__TestedObject__c": "Quote",
+            "SBQQ__TestedField__c": "SBQQ__Account__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__LookupField__c": "Account__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__LookupQuery__c",
+                "referenceId": "PriceRuleLEQlq2"
+            },
+            "SBQQ__PriceRule2__c": "@PriceRuleLEQ",
+            "SBQQ__MatchType__c": "Field Value",
+            "SBQQ__TestedObject__c": "Quote Line",
+            "SBQQ__TestedField__c": "SBQQ__Product__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__LookupField__c": "Product__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__LookupQuery__c",
+                "referenceId": "PriceRuleLEQlq3"
+            },
+            "SBQQ__PriceRule2__c": "@PriceRuleLEQ",
+            "SBQQ__MatchType__c": "Field Value",
+            "SBQQ__TestedObject__c": "Quote Line",
+            "SBQQ__TestedField__c": "SBQQ__EffectiveStartDate__c",
+            "SBQQ__Operator__c": "greater or equals",
+            "SBQQ__LookupField__c": "Effective_Start_Date__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__LookupQuery__c",
+                "referenceId": "PriceRuleLEQlq4"
+            },
+            "SBQQ__PriceRule2__c": "@PriceRuleLEQ",
+            "SBQQ__MatchType__c": "Field Value",
+            "SBQQ__TestedObject__c": "Quote Line",
+            "SBQQ__TestedField__c": "SBQQ__EffectiveStartDate__c",
+            "SBQQ__Operator__c": "less than",
+            "SBQQ__LookupField__c": "Effective_End_Date__c"
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleLEQ"
+            },
+            "Name": "Lookup Existing Quantity",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 10,
+            "SBQQ__EvaluationEvent__c": "On Initialization;On Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": "Subscription_Install_Base_Summary__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleRTNQ"
+            },
+            "Name": "Set Revenue Type - New Quote",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 20,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleRTA"
+            },
+            "Name": "Set Revenue Type - Amendment",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 20,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleRTR"
+            },
+            "Name": "Set Revenue Type - Renewal",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 20,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleSQLRNN"
+            },
+            "Name": "Set QL Revenue - Net New",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 30,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleSQLRE"
+            },
+            "Name": "Set QL Revenue - Expansion",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 30,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleSQLRC"
+            },
+            "Name": "Set QL Revenue - Churn",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 30,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "PriceRuleSQLRR"
+            },
+            "Name": "Set QL Revenue - Renewal",
+            "SBQQ__Active__c": true,
+            "SBQQ__TargetObject__c": "Calculator",
+            "SBQQ__EvaluationOrder__c": 30,
+            "SBQQ__EvaluationEvent__c": "On Calculate;After Calculate",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__AdvancedCondition__c": "",
+            "SBQQ__LookupObject__c": ""
+        }
+    ]
+}

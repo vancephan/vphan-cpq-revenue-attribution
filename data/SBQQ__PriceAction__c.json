@@ -1,0 +1,244 @@
+{
+    "records":[
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleLEQPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleLEQ",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Existing_Quantity__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": "Quantity__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleRTNQPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTNQ",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Revenue_Type__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "IF(Existing_Quantity__c > 0 && SBQQ__RenewedSubscription__c != null, \"Renewal\", IF(Existing_Quantity__c > 0, \"Expansion\", IF(Existing_Quantity__c = null, \"Net New\", \"\")))",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleRTAPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTA",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Revenue_Type__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "IF(Existing_Quantity__c = null, \"Net New\", IF(Existing_Quantity__c > SBQQ__Quantity__c && SBQQ__Existing__c = TRUE, \"Churn\", IF(Existing_Quantity__c < SBQQ__Quantity__c && SBQQ__Existing__c = TRUE, \"Expansion\", \"\")))",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleRTRPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTR",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Revenue_Type__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "IF(SBQQ__RenewedSubscription__c != null, \"Renewal\", IF(SBQQ__RenewedSubscription__c = null && Existing_Quantity__c > 0, \"Expansion\", IF(Existing_Quantity__c = null, \"Net New\", \"\")))",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRNNPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRNN",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Net_New_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "SBQQ__NetTotal__c",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRNNPA2"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRNN",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Expansion_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRNNPA3"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRNN",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Renewal_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRNNPA4"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRNN",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Churn_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLREPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Net_New_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLREPA2"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Expansion_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "SBQQ__NetTotal__c",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLREPA3"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Renewal_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLREPA4"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Churn_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRCPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Net_New_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRCPA2"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Expansion_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRCPA3"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Renewal_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRCPA4"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Churn_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "SBQQ__NetTotal__c",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRRPA1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRR",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Net_New_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRRPA2"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRR",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Expansion_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRRPA3"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRR",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Renewal_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "",
+            "SBQQ__SourceLookupField__c": ""
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "PriceRuleSQLRRPA4"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRR",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__TargetField__c": "Churn_Total__c",
+            "SBQQ__Value__c": "",
+            "SBQQ__Formula__c": "SBQQ__NetTotal__c",
+            "SBQQ__SourceLookupField__c": ""
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleRTNQpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTNQ",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Quote"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleRTApc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTA",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleRTRpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTR",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Quote"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleRTRpc2"
+            },
+            "SBQQ__Rule__c": "@PriceRuleRTR",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleSQLRNNpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRNN",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "Revenue_Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Net New"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleSQLREpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRE",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "Revenue_Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Expansion"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleSQLRCpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRC",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "Revenue_Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Churn"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "PriceRuleSQLRRpc1"
+            },
+            "SBQQ__Rule__c": "@PriceRuleSQLRR",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "Revenue_Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        }
+    ]
+}
