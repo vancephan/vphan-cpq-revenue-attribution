@@ -21,6 +21,11 @@ sfdx force:source:deploy -p $defaultDir --apiversion=52.0
 
 echo ""
 
+echo_attention "Assigning Revenue Attribution User Permission Set"
+sfdx force:user:permset:assign --permsetname Revenue_Attribution_User
+
+echo ""
+
 echo_attention "Pushing in Price Rule data."
 sfdx force:data:tree:import -p $priceRuleData
 
