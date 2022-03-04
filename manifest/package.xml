@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Apex Class-->
+    <types>
+        <members>updateAccountSubscriptionSums</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Permission Set -->
+    <types>
+        <members>Revenue Attribution User</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Custom Object -->
+    <types>
+        <members>Subscription_Install_Base_Summary__c</members>
+		<name>CustomObject</name>
+    </types>
+    
+    <!--Apex Trigger-->
+    <types>
+		<members>sumAccountOnOrder</members>
+		<name>ApexTrigger</name>
+	</types>
+
+    <version>52.0</version>
+</Package>
